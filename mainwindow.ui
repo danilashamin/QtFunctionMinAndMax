@@ -100,7 +100,7 @@
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_2">
           <item>
-           <widget class="QPushButton" name="pushButton">
+           <widget class="QPushButton" name="btnLoadFile">
             <property name="minimumSize">
              <size>
               <width>100</width>

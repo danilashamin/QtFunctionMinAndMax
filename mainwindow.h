@@ -15,8 +15,13 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+private slots:
+    void loadFile();
+
 private:
     Ui::MainWindow *ui;
+    void showFileDontExistsDialog();
+    void showFileEmptyDialog();
 };
 
 #endif // MAINWINDOW_H
