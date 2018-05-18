@@ -22,7 +22,7 @@
   <widget class="QWidget" name="centralWidget">
    <layout class="QVBoxLayout" name="verticalLayout_3">
     <item>
-     <widget class="QCustomPlot" name="widget" native="true">
+     <widget class="QCustomPlot" name="plot" native="true">
       <property name="minimumSize">
        <size>
         <width>500</width>
@@ -51,7 +51,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QTextEdit" name="textEdit">
+           <widget class="QTextEdit" name="etIntervalFrom">
             <property name="minimumSize">
              <size>
               <width>60</width>
@@ -80,7 +80,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QTextEdit" name="textEdit_2">
+           <widget class="QTextEdit" name="etIntervalTo">
             <property name="minimumSize">
              <size>
               <width>60</width>
@@ -172,7 +172,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QTextEdit" name="textEdit_3">
+           <widget class="QTextEdit" name="etMin">
             <property name="minimumSize">
              <size>
               <width>50</width>
@@ -208,7 +208,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QTextEdit" name="textEdit_4">
+           <widget class="QTextEdit" name="etMax">
             <property name="minimumSize">
              <size>
               <width>50</width>
