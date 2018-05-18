@@ -32,6 +32,7 @@ void MainWindow::loadFile()
 
     if(inputFile.atEnd()) {
         showErrorDialog("File is empty.");
+        inputFile.close();
         return;
     }
 }
@@ -51,8 +52,16 @@ void MainWindow::calculate()
 
     xIntervalFrom = ui->etIntervalFrom->toPlainText().toDouble();
     xIntervalTo =ui->etIntervalTo->toPlainText().toDouble();
+    if(xIntervalFrom > xIntervalTo) {
+        showErrorDialog("Incorrect range.");
+        return;
+    }
     createPoints();
 
+    if(x.size() == 0) {
+        showErrorDialog("Failed to find points in the specified range.");
+        return;
+    }
     ui->plot->clearGraphs();
     ui->plot->addGraph();
     ui->plot->graph(0)->setData(x, y);
